@@ -3,8 +3,9 @@ import '../models/product_model.dart';
 
 class ProductCard extends StatelessWidget {
   final UserProduct product;
+  final double widthFactor;
 
-  const ProductCard({Key? key, required this.product}) : super(key: key);
+  const ProductCard({Key? key, required this.product, this.widthFactor=2.5}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
