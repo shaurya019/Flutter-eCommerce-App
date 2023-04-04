@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../models/product_model.dart';
 
 class ProductCard extends StatelessWidget {
@@ -15,7 +14,7 @@ class ProductCard extends StatelessWidget {
           width: MediaQuery.of(context).size.width/2.5,
           height: 150,
           child: Image.network(
-            UserProduct.products[0].imageUrl,
+            product.imageUrl,
             fit: BoxFit.cover,
           ),
         ),
@@ -38,7 +37,7 @@ class ProductCard extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          UserProduct.products[0].name,
+                          product.name,
                           style: Theme.of(context).textTheme.headline5!.copyWith(
                             color: Colors.white,
                           ),

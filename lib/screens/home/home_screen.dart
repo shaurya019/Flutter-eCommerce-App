@@ -7,6 +7,7 @@ import '../../widgets/custom_navbar.dart';
 import '../../models/category_model.dart';
 import '../../widgets/hero_carousel_card.dart';
 import '../../widgets/product_card.dart';
+import '../../widgets/product_carousel.dart';
 import '../../widgets/section_title.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -36,13 +37,15 @@ class HomeScreen extends StatelessWidget {
               ),
           ),
           SectionTile(title:'RECOMMENED'),
-          ProductCard(product: UserProduct.products[0],),
-
+          ProductCarousel(products: UserProduct.products.where((product) =>  product.isRecommended).toList()),
+          SectionTile(title:'MOST POPULAR'),
+          ProductCarousel(products: UserProduct.products.where((product) =>  product.isPopular).toList()),
         ],
       ),
     );
   }
 }
+
 
 
 
