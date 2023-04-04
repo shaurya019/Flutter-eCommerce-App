@@ -10,13 +10,15 @@ final String title;
     return AppBar(
       backgroundColor: Colors.transparent,
       elevation: 0,
+      centerTitle: true,
       title: Container(
         color: Colors.black,
         padding: EdgeInsets.symmetric(
           horizontal: 20,
           vertical: 10,
         ),
-        child: Text('Zero to Unicorn',
+        child: Text(
+        title,
           style: TextStyle(color: Colors.white,
             fontSize: 24,
             fontWeight: FontWeight.bold,
@@ -26,7 +28,9 @@ final String title;
       ),
       iconTheme: IconThemeData(color: Colors.black),
       actions: [
-        IconButton(onPressed: () {}, icon: Icon(Icons.favorite))
+        IconButton(onPressed: () {
+          Navigator.pushNamed(context, '/wishlist');
+        }, icon: Icon(Icons.favorite))
       ],
     );
   }
