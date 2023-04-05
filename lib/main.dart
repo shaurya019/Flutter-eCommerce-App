@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
-        BlocProvider(create: (_) => WishlistBloc()..add(StartWishlist())),
+        BlocProvider(create: (_) => WishlistBloc()..add(WishlistStarted())),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,

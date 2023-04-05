@@ -1,7 +1,6 @@
-
 import 'package:equatable/equatable.dart';
-
 import '../../models/wishlist_model.dart';
+
 
 abstract class WishlistState extends Equatable {
   const WishlistState();
@@ -15,7 +14,7 @@ class WishlistLoading extends WishlistState {
 class WishlistLoaded extends WishlistState {
   final Wishlist wishlist;
 
-  const WishlistLoaded({this.wishlist = const Wishlist()});
+  const WishlistLoaded({this.wishlist =  Wishlist()});
 
   @override
   List<Object> get props => [wishlist];
