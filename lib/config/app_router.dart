@@ -6,6 +6,7 @@ import '../screens/cart/cart_screen.dart';
 import '../screens/checkout /checkout_screen.dart';
 import '../screens/home/home_screen.dart';
 import '../screens/product /product_screen.dart';
+import '../screens/splash /splash_screen.dart';
 import '/screens/screens.dart';
 
 class AppRouter {
@@ -17,6 +18,8 @@ class AppRouter {
         return HomeScreen.route();
       case HomeScreen.routeName:
         return HomeScreen.route();
+      case SplashScreen.routeName:
+        return SplashScreen.route();
       case CartScreen.routeName:
         return CartScreen.route();
       case ProductScreen.routeName:
