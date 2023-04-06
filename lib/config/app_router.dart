@@ -5,8 +5,6 @@ import '../models/product_model.dart';
 import '../screens/cart/cart_screen.dart';
 import '../screens/checkout /checkout_screen.dart';
 import '../screens/home/home_screen.dart';
-import '../screens/product /product_screen.dart';
-import '../screens/splash /splash_screen.dart';
 import '/screens/screens.dart';
 
 class AppRouter {

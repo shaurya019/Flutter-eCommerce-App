@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_ecommerce/blocs%20/wishlist/wishlist_event.dart';
 import 'package:flutter_ecommerce/config/app_router.dart';
-import 'package:flutter_ecommerce/screens/splash%20/splash_screen.dart';
+import 'package:flutter_ecommerce/screens/splash/splash_screen.dart';
 import 'blocs /wishlist/wishlist_bloc.dart';
 import 'config/theme.dart';
 import 'screens/cart/cart_screen.dart';
